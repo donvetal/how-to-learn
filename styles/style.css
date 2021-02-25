@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 .header {
@@ -14,12 +15,71 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+}
+
+.logo {
+
+}
+
+.logo_place-header {
+  position: absolute;
+  width: 183px;
+  height: 32px;
+  left: 64px;
+  top: 30px
+}
+
+.header__title {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  line-height: 96px;
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+  border: 1px solid red; /*убрать*/
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 64px; /*можно ли использовать марджин??*/
+  z-index: 1;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 338px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  border: 1px solid red; /*убрать*/
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red; /*убрать*/
+  z-index: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: -1;
+  border: 1px solid red; /*убрать*/
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +88,8 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place-footer {
+
 }
