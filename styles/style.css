@@ -11,11 +11,15 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
   display: flex;
+  background-color: #f2f2f2;
+  z-index: -1;
+  border: 1px solid red;
 }
 
 .logo {
@@ -39,10 +43,8 @@
   font-size: 102px;
   font-weight: bold;
   border: 1px solid red; /*убрать*/
-  padding-top: 0;
-  padding-bottom: 0;
   margin-left: 64px; /*можно ли использовать марджин??*/
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -53,13 +55,25 @@
   line-height: 25px;
   font-size: 18px;
   border: 1px solid red; /*убрать*/
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__link {
   text-decoration: none;
 }
 
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  z-index: 0;
+  border: 1px solid red; /*убрать*/
+}
 .header__main-illustration {
   position: absolute;
   width: 765px;
@@ -67,20 +81,142 @@
   right: 0;
   bottom: 0;
   border: 1px solid red; /*убрать*/
-  z-index: 0;
+  z-index: 1;
+}
+.content{
+  display: flex;
+  flex-direction: column ;
+
+}
+.description{
+  display: flex;
+  justify-content: center;
+  border: 1px solid yellow;
+}
+/*микс для отступа между секциями 100рх*/
+.margin-top_100 {
+  margin-top: 100px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  position: absolute;
-  top: 64px;
-  right: 0;
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  z-index: -1;
-  border: 1px solid red; /*убрать*/
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  border: 1px solid green;
 }
+.two-columns__brief{
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  width: 175px;
+  color: #2f80ed;
+  border: 1px solid red;
+}
+
+.two-columns__main-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 80%;
+  min-width: 784px;
+  border: 1px solid red;
+}
+
+.two-columns__paragraph{
+  margin: 0;
+  border: 1px solid red;
+}
+/*микс для отступа межу параграфами 30рх*/
+.two-columns__margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid red;
+
+}
+.section-title{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  border: 1px solid red;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.section-subtitle{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.table{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  border: 1px solid red;
+}
+/*микс для отступа между ячейками*/
+.digits_table_margin{
+  margin-top: 60px;
+}
+
+.table__cell{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
+  border: 1px solid red;
+}
+.table__heading{
+  display: flex;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid red;
+}
+/*микс отступ между текстом*/
+.digits_text_margin{
+  margin-top: 20px;
+}
+.table__text{
+  display: flex;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 0;
+  border: 1px solid red;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
