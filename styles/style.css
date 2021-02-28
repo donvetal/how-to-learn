@@ -15,12 +15,6 @@
   margin-top: 100px;
 }
 
-/*микс для отступа межу параграфами 30рх*/
-.two-columns__margin {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 /*микс для отступа между ячейками 60px*/
 .digits_table_margin {
   margin-top: 60px;
@@ -136,6 +130,11 @@
 
 .two-columns__paragraph {
   margin: 0;
+}
+
+.two-columns__paragraph_margin30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -380,13 +379,13 @@
   margin-top: 0;
   padding-bottom: 16px;
   text-decoration: none;
+  color: white;
 }
 
 .footer__social-icon {
   display: flex;
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 
