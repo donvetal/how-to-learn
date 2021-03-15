@@ -1,0 +1,8 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 0 100px;
+  width: 920px;
+  border: 0 solid orange;
+  box-sizing: border-box;
+}

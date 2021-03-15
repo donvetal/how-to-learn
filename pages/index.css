@@ -1,4 +1,6 @@
 @import url(../vendor/normalize.css);
+/*--------------------Keyframes-----------------------------------------------*/
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/page/page.css);
 /* ------- Header ---------*/
 @import url(../blocks/header/header.css);
@@ -20,16 +22,22 @@
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 /* ----------------- Digits ----New techniques------------------- */
-@import url(../blocks/digits/digits.css);
+@import url(../blocks/techniques/techniques.css);
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/table/table.css);
-@import url(../blocks/table/__cell/table__cell.css);
-@import url(../blocks/table/__heading/table__heading.css);
-@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__description/cards__description.css);
 /* -------------------New Video --------------------- */
 
 /* ------------------- New Oakley --------------------- */
+@import url(../blocks/oakley/oakley.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 
 /* ------------------- Feynman --------------------- */
 @import url(../blocks/feynman/feynman.css);
@@ -38,8 +46,15 @@
 @import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/feynman/__image/feynman__image.css);
 /* --------------------- New Digits--------------------*/
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__text/table__text.css);
 
-/* --------------------- New Khan--------------------*/
+/* --------------------- New Khan-------- OPACITY: 0.5; transition: opacity 0.5s linear;------------*/
 
 /* --------------------- Kaufman --------------------*/
 @import url(../blocks/kaufman/kaufman.css);
