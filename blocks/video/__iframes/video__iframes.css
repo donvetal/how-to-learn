@@ -1,8 +1,10 @@
 .video__iframes {
   margin: 0 auto;
-  box-sizing: border-box;
+  *box-sizing: border-box;
   position: absolute;
+  bottom: -50px;
   padding-top: 0;
   padding-bottom: 0;
-  bottom: -50px;
+  border: 1px solid red;
+
 }
