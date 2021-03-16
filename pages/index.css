@@ -1,8 +1,8 @@
 @import url(../vendor/normalize.css);
-/*--------------------Keyframes-----------------------------------------------*/
+/*-------------------Микс для запуска анимации-----------------------*/
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/page/page.css);
-/* ------- Header ---------*/
+/* ------------------- Header ------------------------*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
@@ -12,16 +12,16 @@
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
-/*----------------Content-----------------*/
+/*--------------------Content-------------------------*/
 @import url(../blocks/content/content.css);
-/* ----------- Description --------------*/
+/* ------------------ Description --------------------*/
 @import url(../blocks/description/description.css);
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
 @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
-/* ----------------- Digits ----New techniques------------------- */
+/* --------------------techniques------------------- */
 @import url(../blocks/techniques/techniques.css);
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
@@ -30,14 +30,14 @@
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__title/cards__title.css);
 @import url(../blocks/cards/__description/cards__description.css);
-/* -------------------New Video --------------------- */
+/* ---------------------Video --------------------- */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
 
-/* ------------------- New Oakley --------------------- */
+/* ------------------- Oakley --------------------- */
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/two-columns/two-columns.css);
-@import url(../blocks/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 
 /* ------------------- Feynman --------------------- */
 @import url(../blocks/feynman/feynman.css);
@@ -45,17 +45,23 @@
 @import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
 @import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/feynman/__image/feynman__image.css);
-/* --------------------- New Digits--------------------*/
+/* --------------------- Digits--------------------*/
 @import url(../blocks/digits/digits.css);
-@import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__text/table__text.css);
 
-/* --------------------- New Khan-------- OPACITY: 0.5; transition: opacity 0.5s linear;------------*/
-
+/* --------------------- Khan-------- OPACITY: 0.5; transition: opacity 0.5s linear;------------*/
+@import url(../blocks/khan/khan.css);
+@import url(../blocks/khan/__container/khan__container.css);
+@import url(../blocks/khan/__author/khan__author.css);
+@import url(../blocks/khan/__title/khan__title.css);
+@import url(../blocks/khan/__quote/khan__quote.css);
+@import url(../blocks/khan/__quote-author/khan__quote-author.css);
+@import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
+@import url(../blocks/khan/__book-container/khan__book-container.css);
+@import url(../blocks/khan/__buy-link/khan__buy-link.css);
 /* --------------------- Kaufman --------------------*/
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
@@ -67,8 +73,10 @@
 @import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
 @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
 
-
-/* ------------------- NEW Resources --------------------*/
+/* ------------------- Resources --------------------*/
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/resources/__logo/resources__logo.css);
 
 /* ------------------- Footer --------------------*/
 @import url(../blocks/footer/footer.css);
