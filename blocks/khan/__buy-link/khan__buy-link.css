@@ -9,9 +9,12 @@
   margin-bottom: 0;
   text-decoration: none;
   color: #2f80ed;
+  white-space: nowrap;
+  transition: opacity 0.5s linear;
 
 }
+
 .khan__buy-link:hover {
   opacity: 0.5;
-  transition: opacity 0.5s linear;
+
 }
